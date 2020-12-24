@@ -11,6 +11,10 @@ module.exports = function ({ print }) {
       el.isBuiltIn = true
       return 'mpx-image'
     },
+    qa (tag, { el }) {
+      el.isBuiltIn = true
+      return 'mpx-image'
+    },
     props: [
       {
         test: /^show-menu-by-longpress$/,

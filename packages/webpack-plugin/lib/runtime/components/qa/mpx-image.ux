@@ -1,0 +1,32 @@
+<template>
+  <image class="mpx-image" src="{{src}}"></image>
+</template>
+
+<script>
+  export default {
+    props: {
+      src: {
+        type: String
+      },
+      mode: {
+        type: String,
+        default: 'scaleToFill'
+      },
+      lazyLoad: {
+        type: Boolean,
+        default: false
+      },
+      showMenuByLongpress: {
+        type: Boolean,
+        default: false
+      }
+    }
+  }
+</script>
+
+<style>
+  .mpx-image {
+    width: 300px;
+    height: 225px;
+  }
+</style>

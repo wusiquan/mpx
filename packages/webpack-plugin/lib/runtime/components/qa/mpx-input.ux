@@ -1,0 +1,50 @@
+<template>
+  <input type="{{type}}" />
+</template>
+
+<script>
+  export default {
+    props: {
+      name: String,
+      value: {
+        type: String,
+        default: ''
+      },
+      type: {
+        type: String,
+        default: 'text'
+      },
+      password: Boolean,
+      placeholder: String,
+      disabled: Boolean,
+      maxlength: {
+        type: Number,
+        default: 140
+      },
+      autoFocus: Boolean,
+      focus: Boolean,
+      cursor: {
+        type: Number,
+        default: -1
+      },
+      selectionStart: {
+        type: Number,
+        default: -1
+      },
+      selectionEnd: {
+        type: Number,
+        default: -1
+      }
+    }
+  }
+</script>
+
+<style>
+  .mpx-input {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    display: flex;
+    text-overflow: clip;
+  }
+</style>

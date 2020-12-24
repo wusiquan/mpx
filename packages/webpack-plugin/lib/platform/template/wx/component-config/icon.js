@@ -6,6 +6,10 @@ module.exports = function () {
     web (tag, { el }) {
       el.isBuiltIn = true
       return 'mpx-icon'
+    },
+    qa (tag, { el }) {
+      el.isBuiltIn = true
+      return 'mpx-icon'
     }
   }
 }
